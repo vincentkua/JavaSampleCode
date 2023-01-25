@@ -7,8 +7,10 @@ public class PokemonGame {
     public static void main(String[] arg) {
         Console cons = System.console();
 
+        Poketrainer player = new Poketrainer();
         Pokemon wildpokemon = new Pokemon(10, "Pikachu", "male", 45, 10, 5);
 
+        System.out.println("Hi Player your team is" + player.getTeam());
         System.out.println("Encounter Wild Pokemon " + wildpokemon.getName() + "!!!");
 
         while (true) {
